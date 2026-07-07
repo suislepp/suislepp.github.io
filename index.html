@@ -1,0 +1,216 @@
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Ergo Suislepp - Platform & Automation Engineer</title>
+<meta name="description" content="Ergo Suislepp - Platform & Automation Engineer. About ten years of designing systems and automating things, the best of it built and run solo, in production.">
+<meta property="og:title" content="Ergo Suislepp - Platform & Automation Engineer">
+<meta property="og:description" content="About ten years of designing systems and automating things.">
+<meta property="og:type" content="website">
+<meta name="robots" content="noindex">
+<meta name="theme-color" content="#FBFBF9">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;700;900&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600;700&display=swap" rel="stylesheet">
+<style>
+/* ============ BASE ============ */
+*{margin:0;padding:0;box-sizing:border-box}
+body{font-size:15px;line-height:1.55;-webkit-font-smoothing:antialiased}
+.page{max-width:880px;margin:0 auto;padding:56px 42px 46px}
+@media(max-width:700px){.page{padding:30px 18px}}
+section{margin-top:44px}
+@keyframes rise{from{opacity:0;transform:translateY(10px)}to{opacity:1;transform:none}}
+header,section{animation:rise .5s ease both}
+section:nth-of-type(1){animation-delay:.05s}section:nth-of-type(2){animation-delay:.1s}
+section:nth-of-type(3){animation-delay:.15s}section:nth-of-type(4){animation-delay:.2s}
+@media print{header,section{animation:none}}
+h2{font-size:11px;font-weight:700;letter-spacing:.16em;text-transform:uppercase;margin-bottom:16px}
+.thesis{margin-top:26px;font-weight:700;line-height:1.28}
+.meta,.eyebrow{font-size:12px}
+.eyebrow{letter-spacing:.14em;text-transform:uppercase;margin-bottom:12px}
+.role{font-size:19px;margin-top:5px}
+.meta{margin-top:10px}
+
+.flagship{padding:28px 30px}
+@media(max-width:600px){.flagship{padding:20px 18px}}
+.flagship h3{font-size:21px;font-weight:800;margin-bottom:10px;line-height:1.2}
+.flagship>p{max-width:70ch}
+.pq{position:relative;margin-top:22px;padding-left:26px}
+.pq::before{content:"\201C";position:absolute;left:-6px;top:-18px;font-size:84px;line-height:1;opacity:.18;font-family:Georgia,serif}
+.pq p{font-size:24px;line-height:1.25;font-weight:800;max-width:24ch}
+.pq .attr{font-size:12.5px;margin-top:10px;opacity:.7;font-weight:400}
+
+.statgrid{display:grid;grid-template-columns:repeat(6,1fr);gap:12px}
+.stat{grid-column:span 2;padding:18px 16px 15px}
+.stat.big{grid-column:span 3}
+.stat b{display:block;font-weight:900;letter-spacing:-.02em;line-height:1;font-size:30px}
+.stat.big b{font-size:48px}
+.stat span{display:block;font-size:12px;margin-top:8px;line-height:1.4}
+@media(max-width:640px){.statgrid{grid-template-columns:1fr 1fr}.stat,.stat.big{grid-column:span 1}.stat.big b{font-size:34px}}
+
+.grid2{display:grid;grid-template-columns:1fr 1fr;gap:20px 30px}
+@media(max-width:700px){.grid2{grid-template-columns:1fr}}
+.strength b{display:block;margin-bottom:5px;font-size:15.5px;font-weight:700}
+.strength p{font-size:14px}
+
+.tl{list-style:none}
+.tl li{display:grid;grid-template-columns:108px 1fr;gap:16px;padding:11px 0}
+.tl .yr{font-size:12px;padding-top:2px;white-space:nowrap}
+.tl b{font-weight:700}
+.tl p{font-size:13.5px;margin-top:3px}
+@media(max-width:640px){.tl li{grid-template-columns:1fr;gap:2px}}
+
+.twocol{display:grid;grid-template-columns:1fr 1fr;gap:30px;margin-top:44px}
+@media(max-width:700px){.twocol{grid-template-columns:1fr}.twocol section{margin-top:44px}}
+.twocol section{margin-top:0}
+.plain{list-style:none}
+.plain li{padding:4px 0 4px 18px;position:relative;font-size:14px}
+.plain li::before{content:"■";position:absolute;left:0;top:9px;font-size:8px}
+
+.quotes{display:grid;gap:18px}
+.qcard{position:relative;padding:22px 24px 18px 30px;max-width:88%}
+.qcard:nth-child(2){margin-left:auto}
+@media(max-width:640px){.qcard{max-width:100%}}
+.qcard::before{content:"\201C";position:absolute;left:6px;top:-14px;font-size:72px;line-height:1;opacity:.16;font-family:Georgia,serif}
+.qcard p{font-size:16.5px;line-height:1.45;font-weight:600}
+.qcard .attr{font-size:12px;margin-top:9px;opacity:.65;font-weight:400}
+
+.chips{display:flex;flex-wrap:wrap;gap:7px}
+.chips span{font-size:11.5px;padding:4px 9px}
+
+.meta a{color:inherit}
+
+/* ============ THEME - NORDIC ============ */
+body.t1{background:#FBFBF9;color:#171A1D;font-family:'Inter',sans-serif}
+.t1 .page{border-left:1px solid #D8DDDF;padding-left:64px}
+@media(max-width:700px){.t1 .page{border-left:none;padding-left:18px}}
+.t1 .eyebrow{font-family:'IBM Plex Mono',monospace;color:#33566B}
+.t1 h1{font-family:'Schibsted Grotesk',sans-serif;font-weight:900;font-size:50px;letter-spacing:-.02em;line-height:1}
+.t1 .role{font-family:'Schibsted Grotesk',sans-serif;font-weight:500;color:#5B6670}
+.t1 .meta{font-family:'IBM Plex Mono',monospace;color:#5B6670}
+.t1 .thesis{font-family:'Schibsted Grotesk',sans-serif;font-size:22px;max-width:34ch}
+.t1 .thesis em{font-style:normal;color:#33566B}
+.t1 h2{font-family:'IBM Plex Mono',monospace;color:#33566B;font-weight:500}
+.t1 .flagship{background:#E9F0F3;border-left:3px solid #33566B;border-radius:0 8px 8px 0}
+.t1 .pq p{color:#33566B}
+.t1 .stat{background:#fff;border:1px solid #D8DDDF;border-radius:8px}
+.t1 .stat b{font-family:'Schibsted Grotesk',sans-serif;color:#33566B}
+.t1 .stat span{color:#5B6670}
+.t1 .strength b{font-family:'Schibsted Grotesk',sans-serif}
+.t1 .strength p{color:#5B6670}
+.t1 .tl li{border-bottom:1px solid #E4E7E8}
+.t1 .tl li:last-child{border:none}
+.t1 .tl .yr{font-family:'IBM Plex Mono',monospace;color:#33566B}
+.t1 .tl p{color:#5B6670}
+.t1 .plain li::before{color:#33566B}
+.t1 .qcard{background:#fff;border:1px solid #D8DDDF;border-radius:8px}
+.t1 .qcard::before{color:#33566B}
+.t1 .qcard p{font-family:'Schibsted Grotesk',sans-serif}
+.t1 .chips span{font-family:'IBM Plex Mono',monospace;border:1px solid #D8DDDF;border-radius:3px;background:#fff}
+</style>
+</head>
+<body class="t1">
+<div class="page">
+
+  <header>
+    <div class="eyebrow">referral profile - 2026</div>
+    <h1>Ergo Suislepp</h1>
+    <div class="role">Platform &amp; Automation Engineer</div>
+    <div class="meta">Tallinn, Estonia, moving to Finland at some point (remote works best for me) - EN + ET</div>
+    <div class="meta"><a href="https://www.linkedin.com/in/ergo/">linkedin.com/in/ergo</a></div>
+    <p class="thesis">I enjoy and am pretty decent at <em>designing systems and automating things</em>. The rest of this is about ten years of that, the best of it stuff I built and ran on my own, in production.</p>
+  </header>
+
+  <section>
+    <h2>The big one</h2>
+    <div class="flagship">
+      <h3>Automatize, 2020-21 - a whole AWS platform built solo</h3>
+      <p>I was the only infra person on it, so the whole thing was mine to figure out. It ran on CloudFormation, a bunch of templates for the different parts of the infra (frontend, backend, that sort of thing), plus an orchestrator template that deployed and kept them all in sync. Making a new service was mostly just feeding it a bit of config and letting it set up the rest, pipeline included. It replaced an old manually set up system, and I ran it in production myself afterwards. Costs dropped around 80%, mostly from better architecture and autoscaling (and partly, if I'm honest, from how rough the old setup was).</p>
+      <div class="pq">
+        <p>Developers still talk about how sick your setup was.</p>
+        <div class="attr">The software architect who hired me. Either I did alright, or he'd been stuck with that old monolith long enough that anything would've looked good.</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Numbers (rough ranges, but mine)</h2>
+    <div class="statgrid">
+      <div class="stat big"><b>~80%</b><span>infrastructure cost cut on a platform I built and ran solo</span></div>
+      <div class="stat big"><b>10 / 10</b><span>client NPS, Vaimo's only one that year, for my project</span></div>
+      <div class="stat"><b>100+</b><span>developers across 4 teams I supported on security at Playtech</span></div>
+      <div class="stat"><b>5</b><span>tools nobody asked for that ended up getting used</span></div>
+      <div class="stat"><b>~15</b><span>national healthcare microservices I help keep running today</span></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Things I'm decent at</h2>
+    <div class="grid2">
+      <div class="strength"><b>Figuring things out fast</b><p>A lot of what I'm good at is dropping into something messy I don't fully know yet and getting to a good enough answer quicker than seems reasonable. I'm more of a fast learner and a decent judge of tradeoffs than a deep specialist, so I'm at my best where the problem is new and messy rather than where it needs someone who knows the internals inside out.</p></div>
+      <div class="strength"><b>Beyond the job description</b><p>Every job I've had, I end up building some small tool nobody asked for. A wallpaper generator at a bank helpdesk, a PowerShell CLI toolbox, a CI/CD pipeline orchestrator, a Jira sentiment analyzer, and this year podrunner at the healthcare platform. If it makes my or my coworkers' lives easier, I'll build it.</p></div>
+      <div class="strength"><b>Noticing when something's off</b><p>I'm pretty good at catching logic gaps and inconsistencies in big messy contexts, configs, docs, audit evidence, whatever. Fairly often it's something that already passed a review, which makes me either useful or a bit annoying depending on the day.</p></div>
+      <div class="strength"><b>Writing things down</b><p>I write docs as the runbook I'd actually want open mid incident, the real commands, what it looks like when it breaks, and none of the theory most people don't tend to read.</p></div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Track record</h2>
+    <ul class="tl">
+      <li><span class="yr">2026 -</span><div><b>TEHIK, the Estonian national healthcare platform - application administrator</b><p>Around 15 microservices across QA, performance and production, on Rancher Kubernetes, ArgoCD and Elastic, plus deployments and database migrations. It's production healthcare people depend on, so the goal is basically 100% uptime. I got tired of running one off scripts by hand, so I built podrunner (github.com/suislepp/podrunner), a Python tool that runs scripts and SQL inside the clusters and hands the output back.</p></div></li>
+      <li><span class="yr">2021 - 2025</span><div><b>Playtech - security devops engineer</b><p>Supported the dev teams inside a mature ISO 27001 and PCI program. Hard to give clean yearly numbers, it started fairly light and ramped up over time, early on 3 dev teams with internal and external ISO audits each, by the end 4 teams with PCI audits on top. Threat models and reviews, audit support, SAST/DAST tooling (Checkmarx, Invicti, Mend). Was also very involved in getting the department's on call going from scratch, the processes and scheduling, and getting infra, compliance, clients and PMs to actually talk to each other.</p></div></li>
+      <li><span class="yr">2020 - 2021</span><div><b>Automatize - sole platform engineer</b><p>The AWS platform up top, I was the only engineer on it. I pulled requirements straight from the developers and the business, and made the architecture calls myself. Very proud of the infra I was able to build here!</p></div></li>
+      <li><span class="yr">2018 - 2020</span><div><b>Vaimo - senior internal IT + unofficial sysadmin</b><p>Ran a datacenter migration across dozens of client environments, was on 24/7 on call across the whole Magento hosting estate of around 300, and learned the infra team's complicated HA setups, then ended up teaching them and writing the docs. One demanding client wanted their infrastructure rebuilt for scale, so I took it on. Most of the work was figuring out what they actually needed versus what they were asking for, and laying out the tradeoffs. They gave Vaimo its only 10/10 client NPS that year and sent the thank you gift basket to the infra department, assuming that's where I worked.</p></div></li>
+      <li><span class="yr">2017 - 2018</span><div><b>Swedbank - senior IT support + unofficial IT technician</b><p>Built a PowerShell tool that auto fixed common issues and could message a user's screen when their phone was the thing that was broken. Also a team wallpaper generator with everyone's phone numbers on it. Consistently top of the team on solved calls, for what it's worth.</p></div></li>
+    </ul>
+  </section>
+
+  <div class="twocol">
+    <section>
+      <h2>How I work</h2>
+      <ul class="plain">
+        <li>If something needs doing and I've got the time, I'll usually just do it.</li>
+        <li>I do my best work on smaller, hands on problems where I can actually see the result.</li>
+        <li>I work best heads down and async, honestly not much of a meetings person.</li>
+        <li>If I say I know something, I know it, and if I don't, I'll just tell you.</li>
+      </ul>
+    </section>
+    <section>
+      <h2>Off the clock</h2>
+      <ul class="plain">
+        <li>I also mess around with gamedev and writing, I enjoy both more than I'm actually good at them. Shipped a game recently (Godot, Feb 2026) and pushed six patches in the first two weeks fixing most of what people flagged. It's small and rough in places, but it's been amazing seeing thousands of players enjoy it.</li>
+        <li>A homelab running k3s, ArgoCD, Cloudflare Access and sealed secrets, all bootstrapped from one script.</li>
+        <li>I also run an ongoing D&amp;D campaign. Lots of automations and homebrew systems. Lots of notes with various levels of being categorized.</li>
+      </ul>
+    </section>
+  </div>
+
+  <section>
+    <h2>Quotes I didn't write</h2>
+    <div class="quotes">
+      <div class="qcard">
+        <p>A knack for asking the right questions, spotting edge cases others might miss… a thoughtful, systems-level mindset.</p>
+        <div class="attr">AppSec colleague, Playtech, LinkedIn recommendation</div>
+      </div>
+      <div class="qcard">
+        <p>The only security team guy so far who didn't demand everything be fixed in prod immediately. Very okay to work with.</p>
+        <div class="attr">Operations Manager of a dev team I supported, Playtech, translated from Estonian</div>
+      </div>
+      <div class="qcard">
+        <p>Proactive in compliance matters, flagged a few issues so we could fix them Group-wide.</p>
+        <div class="attr">Senior Legal Counsel, Vaimo, now a CEO, LinkedIn recommendation</div>
+      </div>
+    </div>
+  </section>
+
+  <section>
+    <h2>Stack</h2>
+    <div class="chips">
+      <span>Kubernetes</span><span>Rancher</span><span>k3s</span><span>ArgoCD</span><span>Helm</span><span>AWS - EKS</span><span>CloudFormation</span><span>CodePipeline</span><span>CI/CD design</span><span>GitLab</span><span>Jenkins</span><span>Docker</span><span>Checkmarx</span><span>Mend</span><span>Splunk</span><span>Elastic</span><span>ISO 27001 / PCI</span><span>Python</span><span>PowerShell</span><span>Bash</span><span>Godot</span>
+    </div>
+    <p class="meta" style="margin-top:14px">Some of these I know really well, some I've just used enough to get by. Happy to point out which is which.</p>
+  </section>
+
+</div>
+</body>
+</html>
