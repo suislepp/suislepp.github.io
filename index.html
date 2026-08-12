@@ -5,6 +5,11 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Ergo Suislepp - Platform & Automation Engineer</title>
 <meta name="robots" content="noindex">
+<meta name="description" content="Ergo Suislepp - Platform & Automation Engineer. About ten years of designing systems and automating things, mostly built and run solo, in production.">
+<meta property="og:title" content="Ergo Suislepp - Platform & Automation Engineer">
+<meta property="og:description" content="About ten years of designing systems and automating things.">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#FBFBF9">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Schibsted+Grotesk:wght@400;500;700;900&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600;700&family=Archivo:wdth,wght@62..125,400..900&family=Space+Mono:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
 <style>
@@ -107,9 +112,26 @@ body.t1{background:#FBFBF9;color:#171A1D;font-family:'Inter',sans-serif}
 .t1 .qcard p{font-family:'Schibsted Grotesk',sans-serif}
 .t1 .chips span{font-family:'IBM Plex Mono',monospace;border:1px solid #D8DDDF;border-radius:3px;background:#fff}
 .t1 footer{border-top:1px solid #171A1D;font-family:'IBM Plex Mono',monospace;color:#5B6670}
+
+/* ============ DARK MODE - NORD ============ */
+body.dark{background:#2E3440;color:#ECEFF4}
+body.dark .page{border-left-color:#3B4252}
+body.dark .eyebrow,body.dark h2,body.dark .thesis,body.dark .pq p,body.dark .stat b,body.dark .tl .yr,body.dark .plain li::before,body.dark .qcard::before,body.dark .tl a,body.dark .meta a{color:#88C0D0}
+body.dark .thesis em{color:#ECEFF4}
+body.dark .role,body.dark .meta,body.dark .thesis-sub,body.dark .stat span,body.dark .strength p,body.dark .tl p{color:#D8DEE9}
+body.dark .flagship{background:#3B4252;border-left-color:#88C0D0}
+body.dark .stat,body.dark .qcard,body.dark .chips span{background:#3B4252;border-color:#434C5E}
+body.dark .tl li{border-bottom-color:#3B4252}
+#nm{position:fixed;top:14px;right:14px;border:1px solid #D8DDDF;border-radius:6px;padding:4px 10px;cursor:pointer;font-size:14px;font-family:'IBM Plex Mono',monospace;color:inherit;background:#fff}
+body.dark #nm{background:#3B4252;border-color:#434C5E}
+@media print{#nm{display:none}}
 </style>
 </head>
 <body class="t1">
+<button id="nm" aria-label="toggle dark mode">&#9790;</button>
+<script>
+if(localStorage.getItem('theme')==='dark'||(!localStorage.getItem('theme')&&matchMedia('(prefers-color-scheme: dark)').matches))document.body.classList.add('dark');
+</script>
 <div class="page">
 
   <header>
@@ -213,5 +235,10 @@ body.t1{background:#FBFBF9;color:#171A1D;font-family:'Inter',sans-serif}
   </section>
 
 </div>
+<script>
+document.getElementById('nm').onclick=function(){
+  localStorage.setItem('theme',document.body.classList.toggle('dark')?'dark':'light');
+};
+</script>
 </body>
 </html>
